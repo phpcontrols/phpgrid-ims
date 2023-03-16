@@ -45,6 +45,22 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('laravel-examples/user-management');
 	})->name('user-management');
 
+	Route::get('products', function () {
+		return view('products');
+	})->name('products');
+
+	Route::get('incoming-purchases', function () {
+		return view('incoming-purchases');
+	})->name('incoming-purchases');
+
+	Route::get('outgoing-order', function () {
+		return view('outgoing-order');
+	})->name('outgoing-order');
+
+	Route::get('barcodes', function () {
+		return view('barcodes');
+	})->name('barcodes');
+
 	Route::get('tables', function () {
 		return view('tables');
 	})->name('tables');
