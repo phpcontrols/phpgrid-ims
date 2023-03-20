@@ -67,28 +67,28 @@
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('products') ? 'active' : '') }}" href="{{ url('products') }}">
-          <div class="fas fa-heart icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+          <div class="fas fa-box icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
           </div>
           <span class="nav-link-text ms-1">Products</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('incoming-purchases') ? 'active' : '') }}" href="{{ url('incoming-purchases') }}">
-          <div class="fas fa-heart icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+          <div class="fas fa-box icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
           </div>
           <span class="nav-link-text ms-1">Incoming Purchases</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('outgoing-order') ? 'active' : '') }}" href="{{ url('outgoing-order') }}">
-          <div class="fas fa-heart icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+          <div class="fas fa-box icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
           </div>
           <span class="nav-link-text ms-1">Outgoing Order</span>
         </a>
       </li>
       <li class="nav-item">
         <a class="nav-link {{ (Request::is('barcodes') ? 'active' : '') }}" href="{{ url('barcodes') }}">
-          <div class="fas fa-heart icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
+          <div class="fas fa-barcode icon icon-shape icon-sm shadow border-radius-md bg-white text-center me-2 d-flex align-items-center justify-content-center">
           </div>
           <span class="nav-link-text ms-1">Barcodes</span>
         </a>
