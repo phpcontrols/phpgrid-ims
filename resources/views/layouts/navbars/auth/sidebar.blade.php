@@ -113,7 +113,7 @@
               </g>
             </svg>
           </div>
-          <span class="nav-link-text ms-1">Tables</span>
+          <span class="nav-link-text ms-1">Supplier Management</span>
         </a>
       </li>
       <li class="nav-item">
@@ -133,7 +133,7 @@
               </g>
             </svg>
           </div>
-          <span class="nav-link-text ms-1">Billing</span>
+          <span class="nav-link-text ms-1">Category Management</span>
         </a>
       </li>
       <li class="nav-item">
@@ -154,7 +154,7 @@
               </g>
             </svg>
           </div>
-          <span class="nav-link-text ms-1">Virtual Reality</span>
+          <span class="nav-link-text ms-1">Tags Management</span>
         </a>
       </li>
       <li class="nav-item">
