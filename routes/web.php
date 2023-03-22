@@ -65,6 +65,10 @@ Route::group(['middleware' => 'auth'], function () {
 		return view('tables');
 	})->name('tables');
 
+	Route::get('supplier', function () {
+		return view('supplier');
+	})->name('supplier');
+
     Route::get('virtual-reality', function () {
 		return view('virtual-reality');
 	})->name('virtual-reality');
