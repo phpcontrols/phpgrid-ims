@@ -42,6 +42,8 @@
               $dgProd->set_col_property('InventoryOnHand', array('classes'=>'number-columns'));
               $dgProd->set_col_property('MinimumRequired', array('classes'=>'number-columns'));
 
+              $dgProd->set_col_edittype('categoryId', 'select', 'select id, name from category');
+
               $onGridLoadComplete = <<<ONGRIDLOADCOMPLETE
               function(status, rowid)
               {
