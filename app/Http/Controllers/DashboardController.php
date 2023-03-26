@@ -14,6 +14,9 @@ class DashboardController extends Controller
     {
         $ordersShipped = 0;
 
+        $ordersShipped = DB::connection('im')->table('orders')
+                ->sum('NumberShipped');
+
         return view('dashboard')->with(['ordersShipped'=>$ordersShipped]);
     }
 }
