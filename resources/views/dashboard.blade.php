@@ -9,7 +9,7 @@
           <div class="row">
             <div class="col-8">
               <div class="numbers">
-                <p class="text-sm mb-0 text-capitalize font-weight-bold">Most Ordered</p>
+                <p class="text-sm mb-0 text-capitalize font-weight-bold">Most Ordered Product</p>
                 <h5 class="font-weight-bolder mb-0">
                   {{ $mostOrderedProduct }}
                   <span class="text-success text-sm font-weight-bolder">+55%</span>
@@ -53,10 +53,11 @@
           <div class="row">
             <div class="col-8">
               <div class="numbers">
-                <p class="text-sm mb-0 text-capitalize font-weight-bold">New Clients</p>
+                <p class="text-sm mb-0 text-capitalize font-weight-bold">Product Needs Restock</p>
                 <h5 class="font-weight-bolder mb-0">
-                  +3,462
-                  <span class="text-danger text-sm font-weight-bolder">-2%</span>
+                  @foreach ($topProductToRestock as $product)
+                    {{ $product->ProductName }} ({{ $product->InventoryOnHand}})
+                  @endforeach
                 </h5>
               </div>
             </div>
